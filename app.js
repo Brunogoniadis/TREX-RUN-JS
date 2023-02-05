@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let randomTime = Math.random() *4000;
       let obstaclePosition = 850
       const obstacle = document.createElement('div')
-      obstacle.classList.add('obstacle')
+      if (!isGameOver) obstacle.classList.add('obstacle')
       grid.appendChild(obstacle)
       obstacle.style.left = obstaclePosition + 'px'
 
@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval (timerId)
             alert.innerHTML = 'Game Over'
             isGameOver = true;
+            while(grid.firstChild){
+                grid.removeChild(grid.lastChild)
+            }
         } 
 
         obstaclePosition -=10
