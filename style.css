@@ -1,6 +1,6 @@
 .grid{
     width: 100vw;
-    overflow: hidden;
+    background-color: blue;
 }
 .dino{
     position: absolute;
