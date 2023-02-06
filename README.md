@@ -2,6 +2,8 @@
 
 <h3>Clone do Dino Game</h3><br>
 
+  <img align="center" alt="Bruno-Js" height="240" width="220" src="https://raw.githubusercontent.com/Brunogoniadis/TREX-RUN-JS/main/printDino.png">
+
 ##
 
 <h3>Tecnologias utilizadas:</h3>
